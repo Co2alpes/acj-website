@@ -1,0 +1,23 @@
+/* src/index.css */
+
+/* On supprime les marges par défaut du navigateur */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Évite le scroll horizontal inutile */
+}
+
+/* On s'assure que l'application React prend toute la hauteur */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F6F9; /* Gris ACJ par défaut */
+}
+
+/* On applique le calcul des boîtes pour éviter les problèmes de padding */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
