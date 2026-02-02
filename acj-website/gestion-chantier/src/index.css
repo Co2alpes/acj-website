@@ -1,0 +1,61 @@
+/* src/index.css */
+
+:root {
+  --primary-color: #002D5A;
+  --secondary-color: #005BBB;
+  --accent-color: #D4AF37;
+  --bg-page: #F7F7F7;
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --font-main: 'Montserrat', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: 100%;  <-- Removed to ensure window scroll works reliable */
+  overflow-x: hidden;
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
